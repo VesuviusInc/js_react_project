@@ -16,6 +16,7 @@ export default function ContactList(props){
                 id={contact.id}
                 c_array={props.contact_array}
                 c_array_add={props.contact_add}
+                setHistory={props.setHistory}
                 />
             </li>
         )

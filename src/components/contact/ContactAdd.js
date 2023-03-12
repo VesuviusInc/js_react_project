@@ -1,5 +1,6 @@
 import React from "react";
 import { useState } from "react";
+import { v4 as uuidv4 } from 'uuid';
 
 export default function ContactAdd(props){
     const [contact, setContact] = useState({vname: "", nname: "" , email: "", telenr: "", pb: ""});
@@ -27,7 +28,7 @@ export default function ContactAdd(props){
     }
 
     function addContactList(){
-        setContact((prev) => {return{vname: prev.vname, nname: prev.nname , email: prev.email, telenr: prev.telenr, pb: prev.telenr, id: props.contact_array.length}})
+        setContact((prev) => {return{vname: prev.vname, nname: prev.nname , email: prev.email, telenr: prev.telenr, pb: prev.telenr, id: uuidv4()}})
         props.contact_add(state =>[...state, contact])
     }
     return (

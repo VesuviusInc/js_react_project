@@ -21,7 +21,7 @@ export default function ContactCard(props){
             <div className="col-1 c_add" onClick={handleAddClick}>+</div>
             </div>
             <ContactAdd contact_add={props.setContactArray} cAdd={props.contactAdd} contact_array={props.contactArray}/>
-            <ContactList contact_array={props.contactArray} contact_add={props.setContactArray}/> 
+            <ContactList contact_array={props.contactArray} contact_add={props.setContactArray} setHistory={props.setHistory}/> 
       </div>
     )
 }

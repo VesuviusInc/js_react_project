@@ -3,6 +3,7 @@ import React from "react";
 export default function Contact(props){
     function handleDelete(){
         props.c_array_add(props.c_array.filter(function(el) { return el.id !== props.id; }) )
+        props.setHistory(state =>[...state, props.c_array.filter(function(el) { return el.id === props.id; })])
     }
     return(
         <div className="card">
