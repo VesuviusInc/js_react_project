@@ -2,7 +2,7 @@ import React from "react";
 
 export default function HistoryElement(props){
     return(
-        <div className="card">
+        <div className="card deleted">
             <div className="card-body">
                 <div className="container text-center">
                     <div className="row">
@@ -16,10 +16,13 @@ export default function HistoryElement(props){
                             {props.vorname} {props.nachname}
                             </h4>
                             <p>
-                            {props.telenr}
+                            Tel.: {props.telenr}
                             </p>
                             <p>
-                            {props.email}
+                            E-Mail: {props.email}
+                            </p>
+                            <p>
+                                Deleted at: {props.date}
                             </p>
                         </div>
                         <div className="col-1">

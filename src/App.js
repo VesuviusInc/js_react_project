@@ -2,8 +2,8 @@ import { useState } from 'react';
 import './App.css';
 import ContactCard from './components/contact/ContactCard';
 import NavBar from './components/NavBar';
-import HistoryCard from './components/history/HistoryCard';
 import { v4 as uuidv4 } from 'uuid'
+import HistoryCard from './components/history/HistoryCard';
 
 export default function App(props) {
   const [contactAdd, setContactAdd] = useState(false)
@@ -29,7 +29,7 @@ export default function App(props) {
   return (
     <div className="App card">
       <div className="card-header">Contacts
-        <NavBar/>
+        <NavBar navBarState={props.navBarState}/>
       </div>
         <ContactCard navBarState={props.navBarState} contactArray={contactArray} setContactArray={setContactArray} contactAdd={contactAdd} setContactAdd={setContactAdd} setHistory={setHistory}/>
         <HistoryCard navBarState={props.navBarState} history_array={history}/>

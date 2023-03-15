@@ -3,8 +3,12 @@ import React from "react";
 export default function Contact(props){
     function handleDelete(){
         props.c_array_add(props.c_array.filter(function(el) { return el.id !== props.id; }) )
-        props.setHistory(state =>[...state, props.c_array.filter(function(el) { return el.id === props.id; })])
+        let arr = props.c_array.filter(function(el) { return el.id === props.id; })
+        arr[0].date = Date().toLocaleString().slice(0,Date().toLocaleString().indexOf("G"))
+        console.log(arr[0])
+        props.setHistory(state =>[...state, arr[0]])
     }
+    
     return(
         <div className="card">
             <div className="card-body">
@@ -20,10 +24,10 @@ export default function Contact(props){
                             {props.vorname} {props.nachname}
                             </h4>
                             <p>
-                            {props.telenr}
+                            Tel.: {props.telenr}
                             </p>
                             <p>
-                            {props.email}
+                            Email: {props.email}
                             </p>
                         </div>
                         <div className="col-1 delete" onClick={handleDelete}>

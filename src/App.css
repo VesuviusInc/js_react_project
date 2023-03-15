@@ -10,6 +10,7 @@ body {
 .App {
   font-family: sans-serif;
   text-align: center;
+  width: 500px;
 }
 
 img {
@@ -19,4 +20,16 @@ img {
 
 .text-left {
   text-align: left;
+}
+
+.deleted {
+  background-color: #c00;
+}
+
+.overflow-auto {
+  height: 350px;
+}
+
+.overflow-auto.his {
+  height: 374px;
 }

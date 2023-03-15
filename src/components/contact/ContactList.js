@@ -23,7 +23,7 @@ export default function ContactList(props){
     }
 
     return(
-        <ul className="list-group list-group-flush">
+        <ul className="list-group list-group-flush overflow-auto">
           {props.contact_array.map(createContact)}
         </ul>
     )
