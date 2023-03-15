@@ -28,7 +28,7 @@ export default function App(props) {
 
   return (
     <div className="App card">
-      <div className="card-header">Contacts
+      <div className="card-header">Kontakt-App
         <NavBar navBarState={props.navBarState}/>
       </div>
         <ContactCard navBarState={props.navBarState} contactArray={contactArray} setContactArray={setContactArray} contactAdd={contactAdd} setContactAdd={setContactAdd} setHistory={setHistory}/>
