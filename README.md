@@ -11,7 +11,7 @@ Als letztes die History der Kontakte, nach klick auf "History" bei der Navigatio
 
 ## Beschreibung der Funktionalität
 
-Auf der Startseite werden alle aktuellen Kontakte angezeigt. Die Kontakte befinden sich in einem Scrollable Div. Wenn man auf das "+" bei "Neuer Kontakt" klickt, wird ein Abschnitt aufgeklappt, bei dem der Benutzer die Daten für einen neuen Kontakt eingeben kann. Es findet keine Überpüfung der Daten statt. Wenn man auf das "-" klickt, wird der Abschnitt wieder zugeklappt. Wenn man auf die Mülltone klickt, wird der Kontakt gelöscht. Wenn man nun auf den Tab History wechselt, kann man alle gelöschten Kontakte sehen, mit allen Daten inklusive dem Löschzeitpunkt. Das wechseln der Tabs funktioniert über einen Router. Man wechselt zwischen "/" für die Kontakt-Liste und "/history" für die Übersicht der gelöschten Kontakte.
+Auf der Startseite werden alle aktuellen Kontakte angezeigt. Die Kontakte in "Kontake" und "History" befinden sich in einem Scrollable Div. Wenn man auf das "+" bei "Neuer Kontakt" klickt, wird ein Abschnitt aufgeklappt, bei dem der Benutzer die Daten für einen neuen Kontakt eingeben kann. Es findet keine Überpüfung der Daten statt. Wenn man auf das "-" klickt, wird der Abschnitt wieder zugeklappt. Wenn man auf die Mülltone klickt, wird der Kontakt gelöscht. Wenn man nun auf den Tab History wechselt, kann man alle gelöschten Kontakte sehen, mit allen Daten inklusive dem Löschzeitpunkt. Das wechseln der Tabs funktioniert über einen Router. Man wechselt zwischen "/" für die Kontakt-Liste und "/history" für die Übersicht der gelöschten Kontakte.
 
 Bonus Aufgaben sind in diesem Projekt react-router-dom und uuid.
 
