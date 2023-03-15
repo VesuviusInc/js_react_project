@@ -1,6 +1,7 @@
 import React from "react";
 import ContactAdd from "./ContactAdd";
 import ContactList from "./ContactList";
+import { v4 as uuidv4 } from 'uuid'
 
 export default function ContactCard(props){
     function handleAddClick(){
@@ -20,8 +21,8 @@ export default function ContactCard(props){
             <div className="col-10 text-left">Neuer Contact</div>
             <div className="col-1 c_add" onClick={handleAddClick}>+</div>
             </div>
-            <ContactAdd contact_add={props.setContactArray} cAdd={props.contactAdd} contact_array={props.contactArray}/>
-            <ContactList contact_array={props.contactArray} contact_add={props.setContactArray} setHistory={props.setHistory}/> 
+            <ContactAdd contact_add={props.setContactArray} cAdd={props.contactAdd} contact_array={props.contactArray} key={uuidv4()}/>
+            <ContactList contact_array={props.contactArray} contact_add={props.setContactArray} setHistory={props.setHistory} key={uuidv4()}/> 
       </div>
     )
 }

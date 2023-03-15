@@ -31,8 +31,8 @@ export default function App(props) {
       <div className="card-header">Kontakt-App
         <NavBar navBarState={props.navBarState}/>
       </div>
-        <ContactCard navBarState={props.navBarState} contactArray={contactArray} setContactArray={setContactArray} contactAdd={contactAdd} setContactAdd={setContactAdd} setHistory={setHistory}/>
-        <HistoryCard navBarState={props.navBarState} history_array={history}/>
+        <ContactCard navBarState={props.navBarState} contactArray={contactArray} setContactArray={setContactArray} contactAdd={contactAdd} setContactAdd={setContactAdd} setHistory={setHistory} key={uuidv4()}/>
+        <HistoryCard navBarState={props.navBarState} history_array={history} key={uuidv4()}/>
     </div>
   );
 }

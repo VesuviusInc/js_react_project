@@ -1,6 +1,6 @@
 import React from "react";
 
-import HistoryElement from "./HistoryElement";
+import HistoryElement from "./HistoryElement"
 
 export default function HistoryList(props){
     function createHistoryElement(history){
