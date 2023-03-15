@@ -6,8 +6,9 @@ import { v4 as uuidv4 } from 'uuid'
 export default function ContactCard(props){
     function handleAddClick(){
         if(props.contactAdd === false){
+          console.log(document.getElementsByClassName("c_add")[0])
           props.setContactAdd(true)
-            document.getElementsByClassName("c_add")[0].innerHTML = "-"
+          document.getElementsByClassName("c_add")[0].innerHTML = "-"
         }
         else{
           props.setContactAdd(false)
@@ -18,7 +19,7 @@ export default function ContactCard(props){
         <div className="card-body" style={{ display: props.navBarState ? "none" : "block" }}>
             <div className="row">
             <div className="col-1"/>
-            <div className="col-10 text-left">Neuer Contact</div>
+            <div className="col-10 text-left">Neuer Kontakt</div>
             <div className="col-1 c_add" onClick={handleAddClick}>+</div>
             </div>
             <ContactAdd contact_add={props.setContactArray} cAdd={props.contactAdd} contact_array={props.contactArray} key={uuidv4()}/>

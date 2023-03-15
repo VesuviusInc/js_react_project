@@ -1,12 +1,12 @@
 import React from "react";
+import ContactElement from "./ContactElement";
 
-import Contact from "./Contact";
 
 export default function ContactList(props){
     function createContact(contact){
         return (
             <li className="list-group-item">
-                <Contact
+                <ContactElement
                 key={contact.id}
                 email={contact.email}
                 vorname={contact.vname}

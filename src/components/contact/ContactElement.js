@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function Contact(props){
+export default function ContactElement(props){
     function handleDelete(){
         props.c_array_add(props.c_array.filter(function(el) { return el.id !== props.id; }) )
         let arr = props.c_array.filter(function(el) { return el.id === props.id; })
